@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt">
+	<head>
+		<meta charset="UTF-8">
+		<title>Teste de Carga com Fetch</title>
+		<style>
+			#count {
+				font-size: 20px;
+				font-weight: bold;
+			}
+			.grid {
+				margin-top: 30px !important;
+				max-width: 80% !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+		</style>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+	</head>
+	<body>
+
+
+		<div class="ui one column grid">
+			<div class="row">
+				<h1 class="ui header">Resposta da requisição</h1>
+			</div>
+			<div class="column">
+				<table class="ui table">
+					<thead>
+						<tr>
+							<th>Id</th>
+							<th>Nome</th>
+							<th>Email</th>
+							<th>Cidade</th>
+							<th>Estado</th>
+							<th>Funções</th>
+						</tr>
+					</thead>
+					<tbody id="linhas"></tbody>
+				</table>
+			</div>
+            <div class="row">
+               <a href="/cadastrar.html"> <button class="ui primary basic button">Cadastrar </button> </a>
+            </div>
+		</div>
+
+		<script src="http://localhost:8000/JS/Listar.js" type="module"></script>
+	</body>
+</html>

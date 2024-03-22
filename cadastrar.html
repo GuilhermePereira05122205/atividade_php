@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Cadastrar</title>
+		<style>
+			#count {
+				font-size: 20px;
+				font-weight: bold;
+			}
+			.grid {
+				margin-top: 30px !important;
+				max-width: 80% !important;
+				margin-left: auto !important;
+				margin-right: auto !important;
+			}
+		</style>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+	</head>
+	<body>
+		<div class="ui grid">
+			<div class="column">
+				<h1>Cadastrar</h1>
+				<form class="ui form">
+					<div class="field">
+						<label for="">Nome</label>
+						<input type="text" name="nome" id="nome">
+					</div>
+					<div class="field">
+						<label for="">Email</label>
+						<input type="text" name="email" id="email">
+					</div>
+					<div class="field">
+						<label for="">Cidade</label>
+						<input type="text" name="cidade" id="cidade">
+					</div>
+					<div class="field">
+						<label for="">Estado</label>
+						<input type="text" name="estado" id="estado">
+					</div>
+
+					<input type="button" value="Enviar" id="enviar" class="ui button">
+				</form>
+			</div>
+		</div>
+
+		<script src="http://localhost:8000/JS/Cadastrar.js" type="module"></script>
+	</body>
+</html>
